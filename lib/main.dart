@@ -9,6 +9,7 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       title: 'Agenda de contatos',
       home: HomePage(),
+      debugShowCheckedModeBanner: false,
     );
   }
 }
