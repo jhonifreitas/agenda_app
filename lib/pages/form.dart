@@ -7,24 +7,32 @@ class FormPage extends StatefulWidget {
 
 class _FormPageState extends State<FormPage> {
 
+  void saveData(){
+
+  }
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('Contatos'),
+        title: Text('Formulário'),
+        backgroundColor: Colors.red,
       ),
-      body: Center(
-        child: Column(
-          mainAxisAlignment: MainAxisAlignment.center,
-          children: <Widget>[
-          ],
+      body: Container(
+        padding: EdgeInsets.all(10),
+        child: Form(
+          child: Column(
+            children: <Widget>[
+              TextField()
+            ],
+          ),
         ),
       ),
       floatingActionButton: FloatingActionButton(
-        tooltip: 'Increment',
-        child: Icon(Icons.add),
+        tooltip: 'Salvar',
+        child: Icon(Icons.save),
         onPressed: (){
-
+          this.saveData();
         },
       ),
     );
